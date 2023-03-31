@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Master Broad - palmeco</title>
+    <link rel = "icon" type = "../img/icon.png" href = "../img/icon.png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+
+  </head>
+
+  <body>
+    <main class="container">
+
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <!-- <img data-image="black" src="images/black.png" alt="">
+        <img data-image="blue" src="images/blue.png" alt=""> -->
+        <img data-image="red" class="active" src="images/MasterBoard.png" alt="">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Master Board</span>
+          <h1>Master Board <br>棕櫚環保板</h1>
+
+            <!-- Product Pricing -->
+        <div class="product-price">
+          
+          <h2 id="price">$148</h2>         
+        </div>
+        
+          <p>
+            棕科棕櫚環保板是Palmeco公司的明星產品之一，由的棕櫚纖維製成，不含有害物質，具有環保優點。一種更安全、更具成本效益和可持續的替代傳統建築板材（如水泥、
+            石膏板和膠合板 )<br><br>它易於安裝和清潔，可以被切割和加工成任何形狀和大小，非常適合用於牆面、地面、天花板等裝修。 </p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+
+       <!--   可選舉的顏色 -->
+
+       <!--    <div class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+              <div>
+                <input data-image="black" type="radio" id="black" name="color" value="black">
+                <label for="black"><span></span></label>
+              </div>
+            </div>
+
+          </div> -->
+
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+            <span>尺寸選擇(厚度)</span>
+
+            <div class="cable-choose">
+              <button class="sizeButton" id="4mm">4mm</button>
+              <button class="sizeButton" id="6mm">6mm</button>
+              <button class="sizeButton" id="9mm">9mm</button>
+              <button class="sizeButton" id="12mm">12mm</button>
+              <button class="sizeButton" id="15mm">15mm</button>
+              <button class="sizeButton" id="18mm">18mm</button>
+
+              <button class="sizeButton" id="4mm(砂版)">4mm(砂版)</button>
+              <button class="sizeButton" id="6mm(砂版)">6mm(砂版)</button>
+              <button class="sizeButton" id="9mm(砂版)">9mm(砂版)</button>
+              <button class="sizeButton" id="12mm(砂版)">12mm(砂版)</button>
+              <button class="sizeButton" id="15mm(砂版)">15mm(砂版)</button>
+              <button class="sizeButton" id="18mm(砂版)">18mm(砂版)</button>
+              <button class="sizeButton" id="18mm(砂版)(較輕)">18mm(砂版)(較輕)</button>
+            </div>
+
+            <a href="../product/masterBorad.html">Master Board的詳細介紹</a>
+          </div>
+        </div>
+
+      
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+
+
+   <!-- change money -->
+    <script>
+      var priceElement = document.getElementById("price");
+      var priceButtons = document.querySelectorAll(".sizeButton");
+  
+      priceButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          var price = button.id;
+          switch(price) {
+            case "4mm":
+            priceElement.innerHTML = "$194";
+              break;
+            case "6mm":
+            priceElement.innerHTML = "$278";
+              break;
+            case "9mm":
+            priceElement.innerHTML = "$380";
+              break;
+              case "12mm":
+            priceElement.innerHTML = "$482";
+              break;
+            case "15mm":
+            priceElement.innerHTML = "$562";
+              break;
+            case "18mm":
+            priceElement.innerHTML = "$678";
+              break;
+              case "4mm(砂版)":
+            priceElement.innerHTML = "$294";
+              break;
+            case "6mm(砂版)":
+            priceElement.innerHTML = "$336";
+              break;
+            case "9mm(砂版)":
+            priceElement.innerHTML = "$416";
+              break;
+              case "12mm(砂版)":
+            priceElement.innerHTML = "$509";
+              break;
+              case "15mm(砂版)":
+            priceElement.innerHTML = "$613";
+              break;
+              case "18mm(砂版)":
+            priceElement.innerHTML = "$700";
+              break;
+              case "18mm(砂版)(較輕)":
+            priceElement.innerHTML = "$595";
+              break;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

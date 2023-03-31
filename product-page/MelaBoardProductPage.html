@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mela Broad - palmeco</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+
+  </head>
+
+  <body>
+    <main class="container">
+
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <!-- <img data-image="black" src="images/black.png" alt="">
+        <img data-image="blue" src="images/blue.png" alt=""> -->
+        <img data-image="red" class="active" src="images/Melaboard.png" alt="">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Mela Broard</span>
+          <h1>Mela Broard<br>安特板</h1>
+
+            <!-- Product Pricing -->
+        <div class="product-price">
+          
+          <h2 id="price">$148</h2>         
+        </div>
+        
+          <p>  棕科飾面板是一種環保、可持續性、多功能的建築材料，可應用於牆面、地面、屋頂和門窗等多個場景。<br><br>它由棕櫚纖維和其他礦物組成，具有耐久性、防水、防火、多樣化的設計和易安裝等優點。這種材料不僅提供高品質的外觀和可持續性解決方案，還為可持續性建築做出了重要的貢獻。 Palmeco 的棕科飾面板是現代建築中實用、環保、高附加值的材料之一。</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+
+       <!--   可選舉的顏色 -->
+
+       <!--    <div class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+              <div>
+                <input data-image="black" type="radio" id="black" name="color" value="black">
+                <label for="black"><span></span></label>
+              </div>
+            </div>
+
+          </div> -->
+
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+            <span>尺寸選擇</span>
+
+            <div class="cable-choose">
+              <button class="sizeButton" id="4mm">4mm</button>
+              <button class="sizeButton" id="6mm">6mm</button>
+              <button class="sizeButton" id="9mm">9mm</button>
+              <button class="sizeButton" id="12mm">12mm</button>
+
+            </div>
+
+            <a href="../product/melaBroad.html">Mela Board的詳細介紹</a>
+          </div>
+        </div>
+
+      
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+
+
+   <!-- change money -->
+    <script>
+      var priceElement = document.getElementById("price");
+      var priceButtons = document.querySelectorAll(".sizeButton");
+  
+      priceButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          var price = button.id;
+          switch(price) {
+            case "4mm":
+            priceElement.innerHTML = "$574";
+              break;
+            case "6mm":
+            priceElement.innerHTML = "$616";
+              break;
+            case "9mm":
+            priceElement.innerHTML = "$702";
+              break;
+              case "12mm":
+            priceElement.innerHTML = "$789";
+              break;
+      
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

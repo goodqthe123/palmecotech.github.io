@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wall Panel - palmeco</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+
+  </head>
+
+  <body>
+    <main class="container">
+
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <!-- <img data-image="black" src="images/black.png" alt="">
+        <img data-image="blue" src="images/blue.png" alt=""> -->
+        <img data-image="red" class="active" src="images/GeoWall.png" alt="">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Wall Panel</span>
+          <h1>Wall Panel 牆體</h1>
+
+            <!-- Product Pricing -->
+        <div class="product-price">
+          
+          <h2 id="price">$148</h2>         
+        </div>
+        
+          <p>棕科地聚隔熱板是一種高效的隔熱材料，採用天然棕櫚纖維和其他礦物混合製成。<br>由 Palmeco 板和 Geo Insulator 組成，開發了一種超輕型夾芯板。
+            這種一體式面板堅固、防火且環保。 它提供了出色的熱
+            和隔音，是模塊化牆壁和天花板系統的完美組件。它具有輕便、高強度、耐久性好的特點，能夠有效隔熱，並且不會產生有害氣體。<br>棕科地聚隔熱板適用於各種建築，包括屋頂、牆壁和地板，是一種環保、高效、可持續的建築材料。</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+
+       <!--   可選舉的顏色 -->
+
+       <!--    <div class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+              <div>
+                <input data-image="black" type="radio" id="black" name="color" value="black">
+                <label for="black"><span></span></label>
+              </div>
+            </div>
+
+          </div> -->
+
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+            <span>尺寸選擇</span>
+
+            <div class="cable-choose">
+              <button class="sizeButton" id="1h">一小時防火牆體</button>
+              <button class="sizeButton" id="1hl">一小時防火牆體(較厚)</button>
+              <button class="sizeButton" id="2h">二小時防火牆體</button>
+              <button class="sizeButton" id="4h">四小時防火牆體</button>
+
+            </div>
+
+            <a href="../product/wallPanel.html">Wall Board的詳細介紹</a>
+          </div>
+        </div>
+
+      
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+
+
+   <!-- change money -->
+    <script>
+      var priceElement = document.getElementById("price");
+      var priceButtons = document.querySelectorAll(".sizeButton");
+  
+      priceButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          var price = button.id;
+          switch(price) {
+            case "1h":
+            priceElement.innerHTML = "$797";
+              break;
+            case "1hl":
+            priceElement.innerHTML = "$915";
+              break;
+            case "2h":
+            priceElement.innerHTML = "$983";
+              break;
+              case "4h":
+            priceElement.innerHTML = "$1579";
+              break;
+      
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
